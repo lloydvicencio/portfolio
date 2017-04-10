@@ -7,6 +7,7 @@
 $sans: 'Montserrat', sans-serif;
 $light_gray: #d1d3d4;
 $dark_gray: #414042;
+$gray: #bcbec0;
 
 // Header
 header{
@@ -26,8 +27,19 @@ header{
 	}
 }
 
+
 // Content
+.page-header{
+	background-color:$gray;
+	background-image:none;
+}
+@media screen and (min-width: 64em){
+	.page-header {padding: 5rem 30rem;}
+}
 .contact-box{text-align:center;}
+.item{
+	margin-bottom:2em;
+}
 .video-box {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
