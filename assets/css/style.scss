@@ -14,7 +14,9 @@ header{
 	font-family: $sans;
 	font-weight:700;
 	background-color: $dark_gray;
+	color:$light_gray;
 	.title_col{
 		text-transform: uppercase;
+		letter-spacing: 0.02em;
 	}
 }
