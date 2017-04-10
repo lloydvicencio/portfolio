@@ -12,11 +12,12 @@ $dark_gray: #414042;
 header{
 	padding: 2em;
 	font-family: $sans;
-	font-weight:700;
+	font-weight:300;
 	background-color: $dark_gray;
 	color:$light_gray;
-	.title_col{
+	.title_col h1{
 		text-transform: uppercase;
-		letter-spacing: 0.02em;
+		letter-spacing: 0.05em;
+		font-size:1.2rem;
 	}
 }
