@@ -5,12 +5,14 @@
 
 // Variables
 $sans: 'Montserrat', sans-serif;
+$light_gray: #d1d3d4;
 $dark_gray: #414042;
 
 
 header{
 	padding: 2em;
 	font-family: $sans;
+	font-weight:700;
 	background-color: $dark_gray;
 	.title_col{
 		text-transform: uppercase;
