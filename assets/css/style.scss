@@ -2,3 +2,17 @@
 ---
 
 @import "{{ site.theme }}";
+
+// Variables
+$sans: 'Montserrat', sans-serif;
+$dark_gray: #414042;
+
+
+header{
+	padding: 2em;
+	font-family: $sans;
+	background-color: $dark_gray;
+	.title_col{
+		text-transform: uppercase;
+	}
+}
