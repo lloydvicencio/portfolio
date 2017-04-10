@@ -9,6 +9,15 @@ $light_gray: #d1d3d4;
 $dark_gray: #414042;
 $gray: #bcbec0;
 
+// Mixins
+@mixin transition( $property:all, $duration:300ms, $func:ease ){
+	-webkit-transition: $property $duration $func;
+	-moz-transition: $property $duration $func;
+	-ms-transition: $property $duration $func;
+	-o-transition: $property $duration $func;
+	transition: $property $duration $func;
+}
+
 // Header
 header{
 	padding: 2em;
@@ -40,7 +49,17 @@ header{
 .item{
 	margin-bottom:2em;
 }
-.img-box img{max-width:100%;}
+.img-box{
+	a{
+		display:block;
+		opacity:0.8;
+		&:hover, &:focus{
+			opacity:1;
+			@include transition();
+		}
+	}
+	img{max-width:100%;}
+}
 .video-box {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
