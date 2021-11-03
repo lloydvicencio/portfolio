@@ -8,6 +8,7 @@ $sans: 'Montserrat', sans-serif;
 $light_gray: #d1d3d4;
 $dark_gray: #414042;
 $gray: #bcbec0;
+$white: #ffffff;
 
 // Mixins
 @mixin transition( $property:all, $duration:300ms, $func:ease ){
@@ -24,12 +25,13 @@ header{
 	font-family: $sans;
 	font-weight:300;
 	background-color: $dark_gray;
-	color:$light_gray;
+	color:$white;
 	.title_col h1{
 		//text-transform: uppercase;
 		letter-spacing: 0.08em;
 		font-size:1rem;
 		font-weight:600;
+		text-transform:uppercase;
 		margin:0;
 		line-height:1;
 		span{display:block;}
@@ -39,7 +41,7 @@ header{
 
 // Content
 .page-header{
-	background-color:$gray;
+	background-color:$dark_gray;
 	background-image:none;
 }
 @media screen and (min-width: 64em){
